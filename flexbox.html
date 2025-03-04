@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flexbox practice</title>
+        <style>
+            .home-line{
+                font-family:Arial;
+                font-weight: bold;
+                font-size: 13px;
+                padding-left: 10px;
+            }
+            .search-line{
+                width: 350px;
+                border-radius: 50px;
+                height: 20px;
+                border: none; 
+                padding-left:15px;  
+                
+            }
+            .button{
+                background-color: rgb(106, 57, 152);
+                border-radius: 4px;
+                border-color: rgb(204, 196, 196);
+                width: 100px;
+                height: 30px;
+                color: rgb(247, 245, 245);
+                border-width: 1px;
+                border-style: solid;
+                border-radius: 0;
+            }
+            .whole{
+                width:200px;
+                border-color: rgb(180, 176, 176);
+                border-width: 1px;
+                border-style: solid;
+                border-radius: 4px;
+                margin-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top:5px;
+            }
+            .home{
+                display: flex;
+                justify-content:space-between;
+                margin-bottom: 10px;
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .noti{
+                display: flex;
+                justify-content:space-between;
+                margin-bottom: 10px;
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: 600;
+                align-items: centre;
+
+            }
+            .msg{
+                display: flex;
+                justify-content:space-between;
+                margin-bottom: 10px;
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .inp-text{
+                width:20px;
+                border-radius: 20px;
+                background-color: rgb(49, 109, 245);
+                color: white;
+                border:none;
+                font-size: 14px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 3px;
+                padding-bottom: 3px;  
+            }
+        </style>
+    </head>
+    <body style="padding-bottom: 1000px;">
+        <div style="
+            display: flex;
+            flex-direction: row;">
+            <div style="background-color: 
+            rgb(119, 201, 201);">div 1 text</div>
+            <div style="background-color:
+             lightpink;">div 2<p>hello</p><p>hi</p></div>
+        </div>
+
+        <div style="
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            ">
+            <div style="background-color: 
+            rgb(119, 201, 201);
+            width:100px;
+            ">div 1</div>
+            <div style="background-color:
+             lightpink;
+             flex:1;">flex:1</div>
+        </div>
+
+        <div style="
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;">
+            <div style="background-color:
+             lightpink; flex:1;">flex:1</div>
+             <div style="background-color: 
+             rgb(119, 201, 201);
+             width:100px;">div 1</div>
+            <div style="background-color:
+            lightblue; flex:1;">flex:2</div>
+        </div>
+        <div style="
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            border-width: 2px;
+            border-color: gray;
+            border-style: solid;
+            height:50px;">
+            <div style="background-color:
+             lightpink; flex:1;">flex:1</div>
+             <div style="background-color: 
+             rgb(119, 201, 201);
+             width:100px;">div 1</div>
+            <div style="background-color:
+            lightblue; flex:1;">flex:2</div>
+        </div>
+        <div style="
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            border-width: 2px;
+            border-color: gray;
+            border-style: solid;
+            height:50px;
+            justify-content:space-around ;">
+            <div style="background-color:
+             lightpink; width: 100px;">100px</div>
+             <div style="background-color: 
+             rgb(119, 201, 201);
+             width:100px;">100px</div>
+            <div style="background-color:
+            lightblue; width:100px;">100px</div>
+        </div>
+        <div style="
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            border-width: 2px;
+            border-color: gray;
+            border-style: solid;
+            height:50px;
+            justify-content:space-around;
+            align-items:center;">
+            <div style="background-color:
+             lightpink; width: 100px;">100px</div>
+             <div style="background-color: 
+             rgb(119, 201, 201);
+             width:100px;">100px</div>
+            <div style="background-color:
+            lightblue; width:100px;">100px</div>
+        </div>
+
+        
+        <div style="display:flex;
+        flex-direction: row;
+        background-color: rgb(106, 57, 152);
+        color: white;
+        height:40px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        ">
+            <div class="home-line">Home</div>
+            <div><input class="search-line" type="text" placeholder="search"></div>
+            <div style="padding-right: 10px;"><button class="button">Download</button></div>
+        </div>
+
+        <div class="whole">
+            <div class="home">
+                Home
+                <div class="inp-text">14</div>
+            </div>
+            <div class="noti">
+                Notifications
+                <div class="inp-text">3</div>
+            </div>
+            <div class="msg">
+                Messages
+                <div class="inp-text">5</div>
+            </div>
+        </div>
+    </body>   
+</html>
